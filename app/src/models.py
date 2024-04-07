@@ -19,6 +19,6 @@ class Event(BaseModel):
     organizer: Organizer
     status: str
     type: str
+    joiners: Optional[List[Joiner]]
     location: str
     max_attendees: int
-    joiners: Optional[List[Joiner]]

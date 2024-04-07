@@ -54,7 +54,7 @@ async def create_event(event: Event):
     else:
         data.append(event.dict())
         EventFileManager.write_events_to_file(data)
-        return {"message": "Event created successfully"}
+        return event
 
 # Endpoint to update an existing event
 @router.put("/events/{event_id}", response_model=Event)
@@ -64,9 +64,9 @@ async def update_event(event_id: int, event: Event):
     searched_event = next((e for e in data if e["id"] == event_id), None)
 
     if searched_event:
-        data[data.index(searched_event)].update(event.dict())
+        data[data.index(searched_event)] = event.dict()
         EventFileManager.write_events_to_file(data)
-        return {"message": "Event updated successfully"}
+        return event
     else:
         raise HTTPException(status_code=404, detail="Event not found")
 
