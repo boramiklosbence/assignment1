@@ -23,7 +23,7 @@ async def get_events_by_filter(
     data = EventFileManager.read_events_from_file()
 
     # Filter events based on provided criteria
-    filtered_data = list(
+    searched_events = list(
         filter(
             lambda e: (date is None or e["date"] == date)
             and (organizer is None or e["organizer"]["name"] == organizer)
@@ -33,7 +33,7 @@ async def get_events_by_filter(
         )
     )
 
-    return filtered_data
+    return searched_events
 
 
 # Endpoint to retrieve event by ID
