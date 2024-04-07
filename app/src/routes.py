@@ -35,8 +35,7 @@ async def get_events_by_filter(
 async def get_event_by_id(event_id: int):
     data = EventFileManager.read_events_from_file()
 
-    filtered_data = list(filter(lambda e: (e["id"] == event_id), data))
-    searched_event = filtered_data[0]
+    searched_event = next((e for e in data if e["id"] == event_id), None)
 
     if searched_event:
         return searched_event
@@ -48,8 +47,7 @@ async def get_event_by_id(event_id: int):
 async def create_event(event: Event):
     data = EventFileManager.read_events_from_file()
 
-    filtered_data = list(filter(lambda e: e["id"] == event.id, data))
-    searched_event = filtered_data[0]
+    searched_event = next((e for e in data if e["id"] == event.id), None)
 
     if searched_event:
         raise HTTPException(status_code=400, detail="Event ID already exists")
@@ -63,8 +61,7 @@ async def create_event(event: Event):
 async def update_event(event_id: int, event: Event):
     data = EventFileManager.read_events_from_file()
 
-    filtered_data = list(filter(lambda e: e["id"] == event_id, data))
-    searched_event = filtered_data[0]
+    searched_event = next((e for e in data if e["id"] == event_id), None)
 
     if searched_event:
         data[data.index(searched_event)].update(event.dict())
@@ -78,8 +75,7 @@ async def update_event(event_id: int, event: Event):
 async def delete_event(event_id: int):
     data = EventFileManager.read_events_from_file()
 
-    filtered_data = list(filter(lambda e: e["id"] == event_id, data))
-    searched_event = filtered_data[0]
+    searched_event = next((e for e in data if e["id"] == event_id), None)
 
     if searched_event:
         data.remove(searched_event)
