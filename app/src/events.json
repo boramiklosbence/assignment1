@@ -1,1 +1,127 @@
-[{"id": 1, "name": "Event Name", "date": "2024-04-01", "organizer": {"name": "Updated Organizer Name", "email": "updated@example.com"}, "status": "updated", "type": "updated_event", "joiners": [{"name": "New Joiner 1", "email": "newjoiner1@example.com", "country": "New Country 1"}, {"name": "New Joiner 2", "email": "newjoiner2@example.com", "country": "New Country 2"}], "location": "Updated Location", "max_attendees": 150}, {"id": 2, "name": "Test event 2", "date": "2024-04-10", "organizer": {"name": "fdev", "email": "fdev@example.com"}, "status": "active", "type": "event", "joiners": [{"name": "Test User 2", "email": "test2@test.com", "country": "Hungary"}], "location": "Budapest, Hungary", "max_attendees": 100}, {"id": 3, "name": "Test event 3", "date": "2024-04-15", "organizer": {"name": "fdev", "email": "fdev@example.com"}, "status": "active", "type": "event", "joiners": [{"name": "Test User 3", "email": "test3@test.com", "country": "Hungary"}], "location": "Budapest, Hungary", "max_attendees": 100}, {"id": 4, "name": "Test event 4", "date": "2024-04-20", "organizer": {"name": "fdev", "email": "fdev@example.com"}, "status": "active", "type": "event", "joiners": [{"name": "Test User 4", "email": "test4@test.com", "country": "Hungary"}], "location": "Budapest, Hungary", "max_attendees": 100}, {"id": 5, "name": "Test event 5", "date": "2024-04-25", "organizer": {"name": "fdev", "email": "fdev@example.com"}, "status": "active", "type": "event", "joiners": [{"name": "Test User 5", "email": "test5@test.com", "country": "Hungary"}], "location": "Budapest, Hungary", "max_attendees": 100}, {"id": 6, "name": "Test event 6", "date": "2024-04-30", "organizer": {"name": "fdev", "email": "fdev@example.com"}, "status": "active", "type": "event", "joiners": [{"name": "Test User 6", "email": "test6@test.com", "country": "Hungary"}], "location": "Budapest, Hungary", "max_attendees": 100}]
+[
+    {
+        "id": 1,
+        "name": "Event Name",
+        "date": "2024-04-01",
+        "organizer": {
+            "name": "Updated Organizer Name",
+            "email": "updated@example.com"
+        },
+        "status": "updated",
+        "type": "updated_event",
+        "joiners": [
+            {
+                "name": "New Joiner 1",
+                "email": "newjoiner1@example.com",
+                "country": "New Country 1"
+            },
+            {
+                "name": "New Joiner 2",
+                "email": "newjoiner2@example.com",
+                "country": "New Country 2"
+            }
+        ],
+        "location": "Updated Location",
+        "max_attendees": 150
+    },
+    {
+        "id": 2,
+        "name": "Test event 2",
+        "date": "2024-04-10",
+        "organizer": {
+            "name": "fdev",
+            "email": "fdev@example.com"
+        },
+        "status": "active",
+        "type": "event",
+        "joiners": [
+            {
+                "name": "Test User 2",
+                "email": "test2@test.com",
+                "country": "Hungary"
+            }
+        ],
+        "location": "Budapest, Hungary",
+        "max_attendees": 100
+    },
+    {
+        "id": 3,
+        "name": "Test event 3",
+        "date": "2024-04-15",
+        "organizer": {
+            "name": "fdev",
+            "email": "fdev@example.com"
+        },
+        "status": "active",
+        "type": "event",
+        "joiners": [
+            {
+                "name": "Test User 3",
+                "email": "test3@test.com",
+                "country": "Hungary"
+            }
+        ],
+        "location": "Budapest, Hungary",
+        "max_attendees": 100
+    },
+    {
+        "id": 4,
+        "name": "Test event 4",
+        "date": "2024-04-20",
+        "organizer": {
+            "name": "fdev",
+            "email": "fdev@example.com"
+        },
+        "status": "active",
+        "type": "event",
+        "joiners": [
+            {
+                "name": "Test User 4",
+                "email": "test4@test.com",
+                "country": "Hungary"
+            }
+        ],
+        "location": "Budapest, Hungary",
+        "max_attendees": 100
+    },
+    {
+        "id": 5,
+        "name": "Test event 5",
+        "date": "2024-04-25",
+        "organizer": {
+            "name": "fdev",
+            "email": "fdev@example.com"
+        },
+        "status": "active",
+        "type": "event",
+        "joiners": [
+            {
+                "name": "Test User 5",
+                "email": "test5@test.com",
+                "country": "Hungary"
+            }
+        ],
+        "location": "Budapest, Hungary",
+        "max_attendees": 100
+    },
+    {
+        "id": 6,
+        "name": "Test event 6",
+        "date": "2024-04-30",
+        "organizer": {
+            "name": "fdev",
+            "email": "fdev@example.com"
+        },
+        "status": "active",
+        "type": "event",
+        "joiners": [
+            {
+                "name": "Test User 6",
+                "email": "test6@test.com",
+                "country": "Hungary"
+            }
+        ],
+        "location": "Budapest, Hungary",
+        "max_attendees": 100
+    }
+]

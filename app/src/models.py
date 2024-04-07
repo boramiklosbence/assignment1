@@ -1,6 +1,7 @@
 from typing import List, Optional
 from pydantic import BaseModel
 
+
 class Organizer(BaseModel):
     name: str
     email: str
